@@ -35,13 +35,5 @@ Users can view detailed information, get directions, or save the spot.
 Saved spots can be accessed anytime and deleted if no longer needed.
 
 🛠️ Technologies Used
-HTML5 – Structuring the web page.
-CSS3 – Styling and responsiveness.
-JavaScript (ES6) – Handling interactivity and data fetching.
-Leaflet.js – Displaying and managing the map.
-OpenStreetMap & Overpass API – Fetching real-time parking data.
+HTML5, CSS3, JavaScript(ES6), Leaflet.js(Displaying and managing the map), and OpenStreetMap & Overpass API(Fetching real-time parking data)
 
-🚀 Future Improvements
-Add user authentication to sync saved spots across devices.
-Include real-time availability data for parking spots.
-Integrate more detailed parking cost and restrictions data.
