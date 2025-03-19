@@ -15,16 +15,16 @@ Differentiates between free and paid parking using color-coded markers.
 ✅ Parking Spot Details:
 Provides detailed information about each spot, including distance, capacity, and accessibility.
 Offers quick links for navigation using Google Maps.
-✅ Filtering Options:
 
+✅ Filtering Options:
 Filters parking spots by free or paid options.
 Sorts results based on distance for easy comparison.
-✅ Save Favorite Spots:
 
+✅ Save Favorite Spots:
 Allows users to save preferred parking spots for quick access later.
 Saves data in localStorage for persistence across sessions.
-✅ Responsive UI:
 
+✅ Responsive UI:
 Fully responsive design that works seamlessly across different devices and screen sizes.
 
 🏗️ How It Works
