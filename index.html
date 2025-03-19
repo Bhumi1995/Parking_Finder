@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby Parking Finder</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <h1><i class="fas fa-parking"></i> Nearby Parking Finder</h1>
+        </header>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Enter location or address">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <button id="current-location" class="location-button" title="Use current location">
+                <i class="fas fa-location-crosshairs"></i>
+            </button>
+        </div>
+
+        <div class="saved-spots-toggle">
+            <button id="show-saved" class="toggle-btn">
+                <i class="fas fa-bookmark"></i> My Saved Spots
+            </button>
+        </div>
+
+        <div class="content">
+            <div id="map"></div>
+
+            <div class="parking-list">
+                <h2>Nearby Parking Spots</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="free">Free</button>
+                    <button class="filter-btn" data-filter="paid">Paid</button>
+                </div>
+                <div id="parking-results">
+                    <div class="loading" id="loading">
+                        <div class="spinner"></div>
+                        <p>Finding parking spots...</p>
+                    </div>
+                    <div id="no-results" class="hidden">
+                        <p>No parking spots found nearby.</p>
+                        <p>Try another location or increase search radius.</p>
+                    </div>
+                    <ul id="parking-spots"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="parking-details" class="parking-details hidden">
+            <button id="close-details" class="close-btn"><i class="fas fa-times"></i></button>
+            <div id="details-content"></div>
+        </div>
+
+        <div id="saved-spots-panel" class="saved-spots-panel hidden">
+            <div class="saved-header">
+                <h2>My Saved Parking Spots</h2>
+                <button id="close-saved" class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="saved-spots-list" class="saved-spots-list">
+                <!-- Saved spots will be inserted here -->
+                <div class="empty-state">
+                    <p>You haven't saved any parking spots yet.</p>
+                    <p>Click the "Save" button when viewing a parking spot to save it for later.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
