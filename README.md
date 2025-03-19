@@ -3,6 +3,7 @@
 The Parking Finder App is a user-friendly web application built with HTML, CSS, and JavaScript that helps users locate nearby parking spots easily and efficiently. The app uses OpenStreetMap and the Overpass API to display real-time parking locations on an interactive map. It allows users to search for parking by address or current location, view detailed parking information, and even save favorite spots for future reference.
 
 🌟 Key Features
+
 ✅ Location-Based Search:
 Automatically detects the user’s location using browser geolocation.
 Allows users to manually search by address or location name.
